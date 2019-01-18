@@ -2578,3 +2578,7 @@ const stopsMap = {
     }
   ]
 }
+
+module.exports = {
+    stopsMap
+}
