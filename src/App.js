@@ -24,13 +24,14 @@ class App extends Component {
     mapboxgl.accessToken = 'pk.eyJ1IjoiZHdiZXJnc3Ryb20iLCJhIjoiY2pyNXJnN3h1MDBwbTN6cGR6djd5bjBkayJ9.tuvJAwqYL01mycIQRWC9WQ'
     const map = new mapboxgl.Map({
       container: this.mapContainer,
-      style: 'mapbox://styles/mapbox/light-v9',
+      style: 'mapbox://styles/mapbox/dark-v9',
       scrollZoom: true,
       center: [-71.04,42.36],
       zoom: 9.5
     })
 
     this.setState({stopsStateMap: map})
+
   }
 
   handleClick(id) {
