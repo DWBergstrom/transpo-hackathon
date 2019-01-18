@@ -28,8 +28,10 @@ class App extends Component {
       style: 'mapbox://styles/mapbox/light-v9',
       scrollZoom: true,
       center: [-71.04,42.36],
-      zoom: 10
+      zoom: 9.5
     })
+
+
 
     this.setState({stopsStateMap: map})
 
@@ -39,6 +41,11 @@ class App extends Component {
     console.log('button clicked: ', id)
     const redStops = ['Alewife', 'Davis', 'Porter', 'Harvard', 'Central']
     const orangeStops = ['Oak Grove', 'Malden', 'Wellington', 'Assembly', 'Sullivan']
+    const orangeCoords = [
+      [-71.07082632854296,42.43750459704686],
+      [-71.07431521650399, 42.426580981189915],
+      [-71.0771174392871,42.40174005282045]
+    ]
     const blueStops = ['Wonderland', 'Revere Beach', 'Beachmont', 'Suffolk Downs', 'Orient Heights']
     const greenStops = ['Lechmere', 'Science Park', 'North Station', 'Haymarket', 'Gov\'t Center']
     this.setState({stops: redStops})
@@ -49,6 +56,11 @@ class App extends Component {
         break
       case 'orange':
         this.setState({stops: orangeStops})
+        orangeCoords.forEach(coord => {
+          const marker = new mapboxgl.Marker()
+            .setLngLat(coord)
+            .addTo(this.state.stopsStateMap)
+        })
         break
       case 'blue':
         this.setState({stops: blueStops})
@@ -58,6 +70,7 @@ class App extends Component {
         break
       default:
       this.setState({stops: []})
+      this.componentDidMount()
       break
     }
   }
@@ -69,7 +82,7 @@ class App extends Component {
 
       <React.Fragment>
         <header>
-          <h1>MBTA</h1>
+          <h1 data-id={"mbta"} onClick={() => this.handleClick('mbta')}>MBTA</h1>
         </header>
         <div className="map-container" ref={el => this.mapContainer = el}></div>
         <div className="line-container">

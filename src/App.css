@@ -63,5 +63,9 @@ header {
 }
 
 .stops-container {
-  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  margin-top: 15px;
+
 }
