@@ -1,13 +1,13 @@
 {
-  "main.css": "/transpo-hackathon/static/css/main.eeb4be3f.chunk.css",
-  "main.js": "/transpo-hackathon/static/js/main.7e661593.chunk.js",
-  "main.js.map": "/transpo-hackathon/static/js/main.7e661593.chunk.js.map",
+  "main.css": "/transpo-hackathon/static/css/main.c0f09350.chunk.css",
+  "main.js": "/transpo-hackathon/static/js/main.658670de.chunk.js",
+  "main.js.map": "/transpo-hackathon/static/js/main.658670de.chunk.js.map",
   "static/js/1.d79b701d.chunk.js": "/transpo-hackathon/static/js/1.d79b701d.chunk.js",
   "static/js/1.d79b701d.chunk.js.map": "/transpo-hackathon/static/js/1.d79b701d.chunk.js.map",
   "runtime~main.js": "/transpo-hackathon/static/js/runtime~main.ef7e134d.js",
   "runtime~main.js.map": "/transpo-hackathon/static/js/runtime~main.ef7e134d.js.map",
-  "static/css/main.eeb4be3f.chunk.css.map": "/transpo-hackathon/static/css/main.eeb4be3f.chunk.css.map",
+  "static/css/main.c0f09350.chunk.css.map": "/transpo-hackathon/static/css/main.c0f09350.chunk.css.map",
   "index.html": "/transpo-hackathon/index.html",
-  "precache-manifest.6536ca6b59bb6d8b4874b84ca104ef31.js": "/transpo-hackathon/precache-manifest.6536ca6b59bb6d8b4874b84ca104ef31.js",
+  "precache-manifest.aef4801aa90df989b141f0d27ced2663.js": "/transpo-hackathon/precache-manifest.aef4801aa90df989b141f0d27ced2663.js",
   "service-worker.js": "/transpo-hackathon/service-worker.js"
 }
