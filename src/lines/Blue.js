@@ -11,13 +11,9 @@ class Blue extends Component {
     }
   }
 
-  handleClick() {
-    console.log('blue clicked')
-  }
-
   render() {
     return (
-      <div onClick={() => this.handleClick()} id="blue-line" className="line blue">Blue</div>
+      <div onClick={() => this.props.onClick()} id="blue-line" className="line blue">Blue</div>
     )
   }
 }

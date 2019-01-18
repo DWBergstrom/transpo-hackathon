@@ -61,3 +61,7 @@ header {
 .green {
   background-color: green;
 }
+
+.stops-container {
+  border: 1px solid black;
+}
