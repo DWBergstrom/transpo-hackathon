@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/transpo-hackathon/precache-manifest.aef4801aa90df989b141f0d27ced2663.js"
+  "/transpo-hackathon/precache-manifest.d123ed8d901bc164aa44abf19ebe1757.js"
 );
 
 workbox.clientsClaim();
