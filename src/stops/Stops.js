@@ -17,7 +17,6 @@ class Stops extends Component {
       <React.Fragment>{stops}</React.Fragment>
     )
   }
-
 }
 
 function Stop(props) {

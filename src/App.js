@@ -18,7 +18,6 @@ class App extends Component {
       stopsStateMap: '',
       stops: []
     }
-
   }
 
   componentDidMount() {
@@ -31,14 +30,11 @@ class App extends Component {
       zoom: 9.5
     })
 
-
-
     this.setState({stopsStateMap: map})
-
   }
 
   handleClick(id) {
-    console.log('button clicked: ', id)
+    console.log('map in state: ', this.state.stopsStateMap)
     const redStops = ['Alewife', 'Davis', 'Porter', 'Harvard', 'Central']
     const orangeStops = ['Oak Grove', 'Malden', 'Wellington', 'Assembly', 'Sullivan']
     const orangeCoords = [
@@ -79,7 +75,6 @@ class App extends Component {
   render() {
 
     return (
-
       <React.Fragment>
         <header>
           <h1 data-id={"mbta"} onClick={() => this.handleClick('mbta')}>MBTA</h1>
